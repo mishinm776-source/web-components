@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточки контактов</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Мои контакты</h1>
+
+    <template id="contact-card">
+        <div class="contact-card">
+
+            <img class="contact-image" src="" alt="Фото контакта">
+
+            <div class="contact-info">
+                <h2 class="contact-name"></h2>
+
+                <p>
+                    <strong>Email:</strong>
+                    <span class="contact-email"></span>
+                </p>
+
+                <p>
+                    <strong>Телефон:</strong>
+                    <span class="contact-phone"></span>
+                </p>
+            </div>
+
+        </div>
+    </template>
+
+    <div id="contacts"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
