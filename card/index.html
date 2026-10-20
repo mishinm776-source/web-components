@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="card-component.css">
+    <script src="card-component.js" defer></script>
+</head>
+
+<body>
+
+    <card-component>
+        <h2 slot="header">Заголовок карточки 1</h2>
+
+        <div slot="content">
+            <p>Текстовое содержание карточки 1</p>
+        </div>
+    </card-component>
+
+    <card-component>
+        <h2 slot="header">Заголовок карточки 2</h2>
+
+        <div slot="content">
+            <p>Текстовое содержание карточки 2</p>
+            <img width="250px" src="images.jpg" alt="Изображение карточки 2">
+        </div>
+    </card-component>
+
+    <template id="card-template">
+        <article class="card">
+            <header class="card-header">
+                <slot name="header">Заголовок карточки</slot>
+            </header>
+
+            <section class="card-content">
+                <slot name="content">Содержимое карточки</slot>
+            </section>
+        </article>
+    </template>
+
+</body>
+</html>
